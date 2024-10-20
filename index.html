@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <title>Mineverso - Servidor Minecraft</title>
-    <style>
+        <style>
+        /* Estilos gerais */
         body {
             font-family: 'Minecraft', sans-serif;
             background-color: #f0f0f0;
@@ -54,6 +57,8 @@
             max-width: 100%;
             height: auto;
         }
+
+        /* Layout da grid para desktop */
         .plugin-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -68,11 +73,20 @@
         .plugin-grid li {
             text-align: center;
         }
+
+        /* Estilos para mobile (resoluções menores) */
+        @media (max-width: 768px) {
+            .plugin-grid {
+                grid-template-columns: 1fr; /* 1 coluna */
+            }
+        }
+
         iframe {
             width: 100%;
             height: 600px; /* Define o tamanho do iframe */
             border: none;
         }
+
         .discord-button {
             display: inline-flex;
             align-items: center;
@@ -85,11 +99,13 @@
             font-weight: bold;
             margin-top: 20px;
         }
+
         .discord-button img {
             width: 24px;
             height: 24px;
             margin-right: 10px;
         }
+
         .discord-button:hover {
             background-color: #4752c4;
         }
@@ -103,6 +119,12 @@
 </header>
 
 <div class="container">
+
+    <h2>O que é</h2>
+    <p>Mineverso é um servidor hospedado online (24/7), criado e gerenciado por mim, Gustavo (narvane).</p>
+    <p>A ideia é ter um mundo centralizado, inspirado no conceito de metaverso, onde várias pessoas podem ter uma experiência conectada, utilizando Minecraft Vanilla multiplayer.</p>
+    <p>É um servidor com plugins que ajustam levemente a experiência do Minecraft Vanilla, todos com o intuito de possibilitar um servidor semi-público (para amigos e amigos de amigos), garantindo ordem e propósito.</p>
+
     <h2>Como o servidor funciona</h2>
     <p>Pra você que curte jogar um mine, sozinho ou com uma galera, você me aponta um lugar no mapa e eu te dou um lote lá.</p>
     <p>Lotes são chunks protegidos contra griefing, ou seja, só você e seus amigos podem construir e destruir.</p>
@@ -127,7 +149,7 @@
         </li>
         <li>
             <img src="minefuracao.webp" alt="Desastres naturais no Minecraft" width="300" height="150">
-            <strong>Desastres naturais</strong>: para incentivar os jogadores a não viverem fora das cidades.
+            <strong>Desastres naturais</strong>: para dificultar um pouco o jogo e incentivar os jogadores a não viverem fora das cidades.
         </li>
         <li>
             <img src="mineeco.webp" alt="Sistema de economia" width="300" height="150">
@@ -141,17 +163,20 @@
     <p>OBS: Cidades são protegidas de Desastres Naturais.</p>
 
     <h2>Mapa</h2>
-    <p>Você pode visualizar o mapa do servidor <a href="http://192.99.242.80:25469/#world:16:0:-48:1500:0:0:0:0:perspective">aqui</a>.</p>
+    <p>Você pode visualizar o mapa do servidor. 
+    <a href="http://192.99.242.80:25469/#world:16:0:-48:1500:0:0:0:0:perspective">Veja aqui o mapa</a>.</p>
     
     <!-- Print do mapa -->
     <!--<iframe src="http://192.99.242.80:25469/#world:16:0:-48:1500:0:0:0:0:perspective"></iframe> -->
-    <img src="mapImagem.png" alt="Terrenos e ruínas de cidade" width="600" height="600">
+    <a href="http://192.99.242.80:25469/#world:16:0:-48:1500:0:0:0:0:perspective" target="_blank">
+        <img src="mapImagem.png" alt="Terrenos e ruínas de cidade" width="600" height="600">
+    </a>
     <p style="font-size: 10px;">Desculpe o pinto no centro do mapa kkkk Foi da própria geração de biomas ¯\_( ͡ᵔ ͜ʖ ͡ᵔ)_/¯</p>
 
     <h2>Como jogar</h2>
-    <p>Entre no servidor Discord e mande uma mensagem com as coordenadas de onde quer seu lote. Lá tem mais informações, sobre como baixar o mine e acessar o servidor.</p>
+    <p>Entre no Discord e siga as informações nos canais, para solicitar seu nome na whitelist e sua cidade.</p>
     <p>Ou sinta-se a vontade para me chamar em qualquer lugar, se tiver meu contato!</p>
-    <p>Solicitando, crio seu terro e te coloco na whitelist.</p>
+    <p>Solicitando, só aguardar até eu fazer seu acesso.</p>
 
     <a href="https://discord.gg/s575wc7Uj4" class="discord-button">
         <img src="discord.svg" alt="Discord">
